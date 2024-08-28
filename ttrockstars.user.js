@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         TTROCK-bot
-// @namespace    https://github.com/jibstack64/ttrockstars-bot
+// @namespace    https://github.com/trisiegt/ttrockstars-bot
 // @version      0.1
 // @description  Times Tables Rockstars bot.
-// @author       jibstack64
+// @author       trisiegt (originally by jibstack64)
 // @match        https://play.ttrockstars.com/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=mozilla.org
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=play.ttrockstars.com
 // @grant        GM_log
 // ==/UserScript==
 
@@ -51,9 +51,6 @@
             for (var i = 0; i < top.children.length; i++) {
                 top.children[i].remove()
             }
-            el.style = "background-color: black; color: greenyellow; width: auto;align-items: center;margin-top: 10px;margin-bottom: 10px;padding: 5px;border: 2px solid red; font-size: 20px; font-style: bold; font-family: monospace;";
-            el.innerHTML = "🤖 BOT ENABLED 🔥";
-            top.appendChild(el);
 
             var id = setInterval(() => {
                 if (running) {
